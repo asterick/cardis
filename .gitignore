@@ -1,3 +1,9 @@
+# Project specific
+package-lock.json
+bundle
+dist
+.DS_Store
+
 # Logs
 logs
 *.log

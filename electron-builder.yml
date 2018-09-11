@@ -1,0 +1,9 @@
+appId: us.scyl.cardis
+publish:
+    provider: github
+linux:
+    category: Utility
+files:
+    - bundle/**/*
+    - '!bundle/**/*.js.map'
+    - assets/**/*
