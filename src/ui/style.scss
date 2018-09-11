@@ -1,0 +1,11 @@
+/*
+Top level SCSS for the application, should not contain component stuff
+*/
+
+@import "~normalize.css/normalize.css";
+@import "~@blueprintjs/core/src/blueprint.scss";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+body {
+    padding-top: $pt-navbar-height;
+}
