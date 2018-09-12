@@ -4,6 +4,9 @@ publish:
 linux:
     category: Utility
 files:
-    - bundle/**/*
     - '!bundle/**/*.js.map'
+    - bundle/**/*
     - assets/**/*
+    - main/**/*
+    - '**/node_modules/**/*'
+    - package.json

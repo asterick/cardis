@@ -9,11 +9,11 @@
     "type": "git",
     "url": "https://github.com/asterick/cardis.git"
   },
-  "main": "bundle/main.js",
+  "main": "main/index.js",
   "scripts": {
     "start": "electron .",
     "watch": "webpack --mode=development --watch",
-    "build": "webpack --mode=production && electron-builder --mac --linux --windows",
+    "build": "webpack --mode=production && electron-builder --mac",
     "ship": "webpack --mode=production && electron-builder -p always"
   },
   "babel": {
@@ -25,32 +25,33 @@
     ]
   },
   "dependencies": {
+    "electron-is-dev": "^0.3.0",
+    "electron-updater": "^3.1.1",
+    "electron-platform": "^1.2.0",
+    "nodegit": "^0.22.2"
+  },
+  "devDependencies": {
     "@babel/core": "^7.0.0-rc.2",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-react": "^7.0.0-rc.2",
     "@blueprintjs/core": "^3.5.1",
+    "immutable": "^3.8.2",
+    "electron": "^2.0.8",
+    "electron-builder": "^20.28.4",
+    "node-sass": "^4.9.3",
+    "file-loader": "^2.0.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
-    "electron-is-dev": "^0.3.0",
-    "electron-platform": "^1.2.0",
-    "electron-updater": "^3.1.1",
-    "file-loader": "^2.0.0",
-    "immutable": "^3.8.2",
-    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-transition-group": "^2.4.0",
     "slate": "^0.40.2",
-    "slate-react": "^0.18.5",
-    "style-loader": "^0.23.0",
-    "url-loader": "^1.1.1"
-  },
-  "devDependencies": {
-    "electron": "^2.0.8",
-    "electron-builder": "^20.28.4",
-    "node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0",
-    "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0"
+    "slate-react": "^0.18.5"
   }
 }

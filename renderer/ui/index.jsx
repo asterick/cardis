@@ -9,4 +9,4 @@ export default () =>
 	<div>
 		<TitleBar />
 	    <Editor />
-	</div>;
+	</div>

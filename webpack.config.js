@@ -2,12 +2,16 @@ const path = require("path");
 const webpack = require("webpack");
 const fs = require("fs");
 
-const config = {
+module.exports = {
+    target: "electron-renderer",
     performance: { hints: false },
     devtool: 'source-map',
     output: {
         path: path.join(__dirname, './bundle'),
         filename: '[name].js',
+    },
+    entry: {
+        renderer: './renderer/electron.jsx'
     },
     module: {
         rules: [
@@ -45,19 +49,3 @@ const config = {
         extensions: ['.js', '.jsx', '.css'],
     }
 }
-
-const desktop_main = Object.assign({
-    entry: {
-        main: './src/desktop.js'
-    },
-    target: "electron-main"
-}, config);
-
-const desktop_render = Object.assign({
-    entry: {
-        renderer: './src/electron.jsx'
-    },
-    target: "electron-renderer"
-}, config);
-
-module.exports = [desktop_main, desktop_render];
