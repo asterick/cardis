@@ -3,7 +3,6 @@ const { app, BrowserWindow } = require('electron');
 const { autoUpdater } = require("electron-updater");
 
 const isDev = require('electron-is-dev');
-const nodegit = require('nodegit');
 
 app.on('ready', () => {
     // Create the browser window.
@@ -12,6 +11,8 @@ app.on('ready', () => {
         height: 600,
         show: false
     });
+
+    if (!isDev) autoUpdater.checkForUpdates();
 
     // and load the index.html of the app.
     mainWindow.loadFile('./assets/index.html');

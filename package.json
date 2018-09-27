@@ -28,7 +28,7 @@
     "electron-is-dev": "^0.3.0",
     "electron-updater": "^3.1.1",
     "electron-platform": "^1.2.0",
-    "nodegit": "^0.22.2"
+    "simple-git": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
@@ -37,7 +37,7 @@
     "@blueprintjs/core": "^3.5.1",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
-    "electron": "^2.0.8",
+    "electron": "^3.0.1",
     "electron-builder": "^20.28.4",
     "file-loader": "^2.0.0",
     "immutable": "^3.8.2",
@@ -47,8 +47,8 @@
     "react-dom": "^16.5.0",
     "react-transition-group": "^2.4.0",
     "sass-loader": "^7.1.0",
-    "slate": "^0.40.2",
-    "slate-react": "^0.18.5",
+    "slate": "^0.41.2",
+    "slate-react": "^0.18.10",
     "style-loader": "^0.23.0",
     "url-loader": "^1.1.1",
     "webpack": "^4.17.2",

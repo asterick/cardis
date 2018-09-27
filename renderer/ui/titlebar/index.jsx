@@ -1,4 +1,5 @@
 import React from 'react';
+import Updater from '../updater';
 
 import {
     Alignment,
@@ -17,6 +18,7 @@ export default () =>
         </NavbarGroup>
         <NavbarGroup align={Alignment.RIGHT}>
             <NavbarDivider />
+            <Updater />
             <Button small={true} icon="settings" minimal={true} />
         </NavbarGroup>
     </Navbar>
