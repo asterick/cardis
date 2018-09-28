@@ -31,13 +31,14 @@
     "simple-git": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.1",
+    "@babel/core": "^7.1.1",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-react": "^7.0.0-rc.2",
     "@blueprintjs/core": "^3.5.1",
-    "babel-loader": "^8.0.2",
+    "ajv-keywords": "^3.2.0",
+    "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
-    "electron": "^3.0.1",
+    "electron": "^3.0.2",
     "electron-builder": "^20.28.4",
     "file-loader": "^2.0.0",
     "immutable": "^3.8.2",
